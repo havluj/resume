@@ -1,0 +1,235 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Jan} % Your first name
+\familyname{Havluj} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\address{Namesti Sitna 3106}{Kladno, Czech Republic 272 01}
+\mobile{+420 732 881 678}
+\email{jan@havluj.eu}
+\homepage{http://havluj.eu}{havluj.eu} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience}
+
+%------------------------------------------------
+
+\cventry{2018--present}{Software Engineer}{\textsc{Profinit}}{Prague}{}{
+\begin{itemize}
+\item coinmate
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2016--2018}{Junior Software Engineer (ALM R\&D)}{\textsc{Micro Focus | HPE}}{Prague}{}{
+Development of Service Virtualization, which includes:
+\begin{itemize}
+\item Brief work in DevOps to deliver our product as SaaS.
+\item Designing a domain specific language and writing a compiler \& an interpreter for it. The DSL is being used to configure our product.
+\item Reverse engineering of Android apps to be able to virtualize their 3\textsuperscript{rd} dependencies without rooting the phone (decompiling apps, inspecting their source code and identifing parts that needed to be virtualized (NFC, bluetooth, HTTP communications), injecting my code)
+\item Recording demos and presenting my work to customers (e.g. virtualizing VW CarNet Android application).
+\item Java 8, Spring, Android, JavaScript, Babel, language design, Kubernetes, AWS, Docker
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2015--2016}{Backend Developer}{\textsc{Digital Bandits}}{Prague}{}{
+\begin{itemize}
+\item Development of the server-side part of a web app called Hubert, a distributed system used mainly as social network for the members of the Impact Hub community.
+\item DevOps -- I helped to design and build the system's architecture, as well as development and release pipelines.
+\item PHP, Nette 2, Doctrine 2, MySQL, DynamoDB, AWS, ElasticSearch
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2012--2015}{Software Engineer}{\textsc{FinSense}}{Kladno}{}{
+\begin{itemize}
+\item Designing and building the company's IS and entire online presence -- including their public website, and a platform for selling their real estates. 
+\item PHP, MySQL, Nette 2 (+ HTML, CSS, JS)
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2012--2014}{Web Developer}{\textsc{Freelance}}{Prague}{}{
+\begin{itemize}
+\item Freelance web development for smaller companies (total of 6 clients).
+\item HTML, CSS, Javascript, PHP, MySQL
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2011--2012}{IT support}{\textsc{FinSense}}{Kladno}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2018--present}{AI \& machine learning}{Czech Technical University}{Prague}{}{
+\begin{itemize}
+\item Classes I have taken: \href{http://havluj.eu/edu/bs-classes.html}{www.havluj.eu/edu/bs-classes.html}
+\item Participating in events - Google Dev Fest, mDevTalk, Informatics Evenings
+\end{itemize}}
+
+\cventry{2014--2018}{Computer Science}{Czech Technical University}{Prague}{}{
+\begin{itemize}
+\item Classes I have taken: \href{http://havluj.eu/edu/bs-classes.html}{www.havluj.eu/edu/bs-classes.html}
+\item Participating in events - Google Dev Fest, mDevTalk, Informatics Evenings
+\end{itemize}}
+
+\cventry{2014--Present}{Coursera, Code school, MIT OCW}{Internet}{}{}{
+Machine learning, Advanced algorithms, Javascript, ...
+}
+\cventry{2012--2013}{Escambia High School}{}{Pensacola, FL}{}{}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Certificates}
+
+\cventry{2016}{Machine Learning}{Stanford University}{Coursera}{W534GWHV4SBY}{}
+
+\cventry{2016}{Database Design and Programming With SQL}{Oracle Academy}{Prague}{}{}
+
+\cventry{2013}{First Certificate of English}{British Council}{Prague}{0042340198}{Grade: A, Achieved level: C1}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects nad Open Source}
+
+\cventry{2017}{Detecting objects in bird nests using neural networks}{Tensorflow}{}{}{
+	My bachelor thesis focused on machine learning and image processing.
+  	\href{http://www.birdsonline.cz/}{http://birdsonline.cz/}
+}
+
+\cventry{2016}{Winch -- prune and anonymize DB data}{\textsc{Groovy}}{MSSQL, Oracle}{}{
+	As a part of a 4 member team I helped to develop a tool that takes in provided configuration and generates database specific SQL to prune a anonymize data. It was a school project in collaboration with \href{https://www.gemsystem.cz/novinky/gem-winch}{Gem Systems}.
+}
+
+\cventry{2015}{CLI Spreadsheet editor}{\textsc{C++}}{\textsc{ncurses}}{}{
+\href{https://github.com/havluj/spreadsheet}{https://github.com/havluj/spreadsheet}
+}
+
+\cventry{2015}{Minimum vertex cover finder}{\textsc{Java}}{\textsc{JavaFX}}{Genetic programming}{
+\href{https://github.com/havluj/evolution}{https://github.com/havluj/evolution}
+}
+
+\cventry{2015}{Stopwatch for AVR Butterfly}{\textsc{AVR Assembler}}{}{}{
+\href{https://github.com/havluj/stopwatch}{https://github.com/havluj/stopwatch}
+}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills}
+
+\cvitem{Languages}{Java, PHP, C/C++, Javascript, Bash, Groovy}
+\cvitem{Technologies}{Linux, Android, AWS, MySQL, Microsoft SQL Server, Oracle DB}
+\cvitem{Other}{GIT, Scrum}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cventry{Advanced}{English}{Achieved level: C1}{billingual proficiency}{1 year in the US}{}
+\cventry{Mothertongue}{Czech}{}{}{}{}
+\cventry{Basic}{German}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PERSONAL SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Personal summary}
+%\cvitem{}{I am a CS student at CTU in Prague. I work as junior java developer at HPE. Most of my time is spent on the %development of our domain specific language, which is used to configure the product. In my previous work experience I have %mostly worked with PHP on the backend, and thin web clients on the frontend.}
+%\cvitem{}{I am a team player with a strong motivation and discipline. I care about the quality of my code - that means %making it readable, well structured, documented, and tested. I always design software with the end user in mind, so I %always pay special attention to making it very easy to use.}
+%\cvitem{}{In my free time, I learn about and try to play with artificial intelligence algorithms, for example neural %networks, deep learning, linear regression, or logistic regression.}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{JVM, backend development}{AI, machine learning}
+%\cvlistdoubleitem{Books}{Cryptocurrencies (Ethereum)}
+%\cvlistitem{Movies, Series, Games}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
